@@ -22,27 +22,27 @@ const countDisLike1 = document.getElementById("countDisLike1")
 function clickDisLike1(){
   let totalDisLikes = parseInt(countDisLike1.value) + 1
   countDisLike1.textContent = totalDisLikes.toString()
-}
+}  
 btnDisLike1.addEventListener("click",clickDisLike1)
 
 const btnDisLike2 = document.getElementById("btnDisLike2")
-const countDisLikes2 = document.getElementById("countDisLike2")
+const countDisLike2 = document.getElementById("countDisLike2")
 
 function clickDisLike2(){
   let totalDisLikes = parseInt(countDisLike2.value) + 1
   countDisLike2.textContent = totalDisLikes.toString()
-}
-btnDisLike2.addEventListener("click", clickDisLike2)
+}  
+btnDisLike2.addEventListener("click",clickDisLike2)
+
+const submit = document.getElementById("submit")
 
 const comment = document.getElementById("comment")
 
-const comment = document.getElementById("submit")
-
-const comment = document.getElementById("commentbox")
+const commentbox = document.getElementById("commentbox")
 
 function submitComment(){
 
-commentbox.textContent += comment.value.toString() + "\n
+commentbox.textContent += comment.value.toString() + "\n"
 comment.value=""
 }
 
